@@ -1,0 +1,39 @@
+$primary-color: #5ca4d6;
+$border: 0.1875em solid $primary-color;
+$blue-shirt: "http://i.imgur.com/f4MDU7O.png";
+$red-shirt: "http://i.imgur.com/g0RtIBk.png";
+$yellow-shirt: "http://i.imgur.com/VLwmePn.png";
+
+
+@mixin popUp ($position, $width, $height, $background, $borders) {
+  position: $position;
+  width: $width;
+  height: $height;
+  background: $background;
+  border: $borders;
+}
+
+@mixin menus ($position, $background, $borders, $opacity, $width, $height, $left, $top) {
+  position: $position;
+  background: $background;
+  border: $borders;
+  opacity: $opacity;
+  width: $width;
+  height: $height;
+  left: $left;
+  top: $top;
+}
+
+@mixin sizeTriDown ($left, $top) {
+  left: $left;
+  top: $top;
+}
+
+@mixin sizeIcons ($position, $margin, $width, $height, $text-align, $color) {
+  position: $position;
+  margin: $margin;
+  width: $width;
+  height: $height;
+  text-align: $text-align;
+  color: $color;
+}
